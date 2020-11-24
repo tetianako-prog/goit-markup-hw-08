@@ -1,0 +1,144 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2f303a;
+
+  &__logo {
+    margin-right: 0;
+  }
+
+  &__logo,
+  &__address {
+    color: $primary-white-color;
+  }
+
+  &__address {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  &__email,
+  &__phone {
+    display: block;
+    margin-top: 9px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  .footer-flex {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+  }
+
+  &__column {
+    text-align: center;
+  }
+
+  &__column:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  &__column:nth-child(1),
+  &__column:nth-child(2) {
+    @media screen and (min-width: 768px) {
+      flex-basis: 50%;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  &__column:nth-child(1) {
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
+  }
+
+  &__column:nth-child(2) {
+    @media screen and (min-width: 1200px) {
+      margin-right: 96px;
+    }
+  }
+
+  &__column:nth-child(3) {
+    @media screen and (min-width: 768px) {
+      flex-basis: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: auto;
+      text-align: left;
+    }
+  }
+
+  &__join {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__socials {
+    justify-content: center;
+  }
+
+  .socials-links {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: 250ms all cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background: $accent-color;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
+
+    input {
+      margin-bottom: 20px;
+      padding: 15px 0 15px 16px;
+      width: 100%;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      @media screen and (min-width: 768px) {
+        width: 450px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 368px;
+        margin-bottom: 0;
+        margin-right: 12px;
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      margin-left: 10px;
+    }
+  }
+}
