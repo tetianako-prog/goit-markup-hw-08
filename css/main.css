@@ -1038,6 +1038,12 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__column {
+    text-align: left;
+  }
+}
+
 .footer__column:not(:last-child) {
   margin-bottom: 60px;
 }
@@ -1101,14 +1107,14 @@ img {
           justify-content: center;
 }
 
-.footer .socials-links {
+.footer .socials__link {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
   -webkit-transition: 250ms all cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer .socials-links:hover, .footer .socials-links:focus {
+.footer .socials__link:hover, .footer .socials__link:focus {
   background: #2196f3;
 }
 
@@ -1200,8 +1206,12 @@ img {
   }
 }
 
-.filter__item + .filter__item {
-  margin-left: 8px;
+.filter__item {
+  margin-right: 8px;
+}
+
+.filter__item:last-child {
+  margin-right: 0;
 }
 
 .filter__btn {

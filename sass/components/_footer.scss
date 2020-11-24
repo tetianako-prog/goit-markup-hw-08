@@ -41,6 +41,9 @@
 
   &__column {
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 
   &__column:not(:last-child) {
@@ -95,7 +98,7 @@
     justify-content: center;
   }
 
-  .socials-links {
+  .socials__link {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
     transition: 250ms all cubic-bezier(0.4, 0, 0.2, 1);
